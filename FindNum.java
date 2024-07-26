@@ -1,10 +1,19 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class FindNum{
-// Write a method to find whether a particular element is present in an ArrayList
+  public static boolean contains(ArrayList<Integer> li,int a){
+    boolean con=li.contains(a);
+    return con;
+  }
 public static void main(String[]args){
-// Create an Object for ArrayList
-  // Take a For Loop and Load Numbers in to ArrayList using add()
-  // Contains is the Method name which you will create
+  ArrayList <Integer> arrayList=new ArrayList<>();
+  Scanner sc=new Scanner(System.in);
+  System.out.println("Enter the number of elements:");
+  int n=sc.nextInt();
+  for(int i=0;i<=n;i++){
+    arrayList.add(i);
+  }
 System.out.println("ArrayList contains 5: " + contains(arrayList, 5));
-  // it should return either true or false
 }
 }
