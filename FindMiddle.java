@@ -1,13 +1,30 @@
-public class FindMiddle{
-    public static <T> T Middle(ArrayList<T> list) {
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class FindMiddle {
+
+    public static <T> T middleOfArrayList(ArrayList<T> list) {
         return list.get(list.size() / 2);
     }
-// prepare a function to return middle value of LinkedList
-  public static void main(String[]args){
-// create a LinkedList and ArrayList Objects
-    // prepare a for Loop of 1 to 10
-    // and add elements of for loop in both Objects using add functions
-        System.out.println("Middle of ArrayList: " + Middle(arrayList));
-    // write a print statement to print middle no of Linkedlist Object
-}
+
+    public static <T> T middleOfLinkedList(LinkedList<T> list) {
+        return list.get(list.size() / 2);
+    }
+
+    public static void main(String[] args) {
+        // Create LinkedList and ArrayList objects
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        LinkedList<Integer> linkedList = new LinkedList<>();
+
+        // Prepare a for loop from 1 to 10 and add elements to both objects
+        for (int i = 1; i <= 10; i++) {
+            arrayList.add(i);
+            linkedList.add(i);
+        }
+
+        // Output the middle elements
+        System.out.println("Middle of ArrayList: " + middleOfArrayList(arrayList));
+        System.out.println("Middle of LinkedList: " + middleOfLinkedList(linkedList));
+    }
 }
