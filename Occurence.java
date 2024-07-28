@@ -1,5 +1,17 @@
+import java.util.ArrayList;
+
 public class Occurence{
 // prepare a function to find out the occurence of a number
+      public static Integer  countOccurrences(ArrayList<Integer> list,int element) {
+        int count = 0;
+        for (Integer i : list) {
+            if (i == element) {
+                count++;
+            }
+        }
+        return count;
+        
+      }
   // paramaters must contain Arraylist and a element to check it's occurence or repetition
   public static void main(String[]args){
    ArrayList<Integer> arrayList = new ArrayList<>();
