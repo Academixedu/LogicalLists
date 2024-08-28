@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 public class FindNum{
 // Write a method to find whether a particular element is present in an ArrayList
@@ -11,12 +12,22 @@ public static void main(String[]args){
     arrayList.add(i);
   }
   // System.out.println(arrayList);
- contains.Contains(arrayList,10);
+//  contains.Contains(arrayList,10);
 
-     System.out.println("ArrayList contains 5: " + contains(arrayList, 5));
+     System.out.println("ArrayList contains 5: " + Contains(arrayList, 10));
 
 
 }
+
+    private static boolean Contains(ArrayList<Integer> arrayList, int i) {
+      for (int num : arrayList) {
+        if (num == i) {
+            return true;
+        }
+    }
+    return false;
+        
+    }
 
   
      
