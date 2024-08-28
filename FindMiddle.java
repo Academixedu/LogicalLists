@@ -14,7 +14,7 @@ public class FindMiddle{
     LinkedList<Integer> linkedList = new LinkedList<>();
 // create a LinkedList and ArrayList Objects
 
-for (int i = ; i <= 100; i++) {
+for (int i =0 ; i <= 100; i++) {
     arrayList.add(i);
     linkedList.add(i);
 }
