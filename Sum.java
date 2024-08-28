@@ -6,6 +6,7 @@ public class Sum{
     for(int i:list){
       sum=sum+i;
     }
+    return sum;
     
   }
   public static void main(String[]args){
