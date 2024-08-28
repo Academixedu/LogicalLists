@@ -1,13 +1,25 @@
-public class Occurence{
-// prepare a function to find out the occurence of a number
-  // paramaters must contain Arraylist and a element to check it's occurence or repetition
+import java.util.*;
+public class FindMiddle{
+     public static <T> T Middle(ArrayList<T> list) {
+        return list.get(list.size() / 2);
+    }
+
+    public static <T> T Middle1(LinkedList<T> list) {
+        return list.get(list.size() / 2);
+    }
+// prepare a function to return middle value of LinkedList
   public static void main(String[]args){
-   ArrayList<Integer> arrayList = new ArrayList<>();
-     for (int i = 1; i <= 10; i++) {
-            arrayList.add(i);
+// create a LinkedList and ArrayList Objects
+       LinkedList<Integer> ln = new LinkedList<Integer>();
+        ArrayList<Integer> arrayList = new ArrayList<Integer>();
+        for (int i = 0; i < 10; i++) {
+            ln.add(i + 1);
+            arrayList.add(i + 1);
         }
-        arrayList.add(5);
-     int element = 5;
-        System.out.println("Occurrences of " + element + " in ArrayList: " + countOccurrences(arrayList, element));
-  }
+        // prepare a for Loop of 1 to 10
+        // and add elements of for loop in both Objects using add functions
+        System.out.println("Middle of ArrayList: " + Middle(arrayList));
+        System.out.println("Middle of ArrayList: " + Middle1(ln));
+        // write a print statement to print middle no of Linkedlist Object
+}
 }
