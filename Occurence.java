@@ -18,7 +18,7 @@ public class Occurence{
         }
         arrayList.add(5);
      int element = 5;
-        System.out.println("Occurrences of " + element + " in ArrayList: " + countOccurrences(arrayList, element));
+        System.out.println("Occurrences of " + element + " in ArrayList: " +arrayList );
   }
-  
+
 }
